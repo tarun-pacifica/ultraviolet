@@ -1,0 +1,2 @@
+class RadiationController < ApplicationController
+end
