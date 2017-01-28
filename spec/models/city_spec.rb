@@ -13,10 +13,10 @@ require 'rails_helper'
 RSpec.describe City, type: :model do
 	
 	it "Successfully saves to database." do
-		expect {City.create :name => Faker::Address.unique.city}.to change{City.count}.by 1 
+		expect {City.create :name => Faker::Address.city}.to change{City.count}.by 1 
 	end
 
-	let (:city) { City.create :name => Faker::Address.unique.city }
+	let (:city) { City.create :name => Faker::Address.city }
 	it "The name field is of type 'String'" do
 		expect(city.name.class).to eq(String)
 	end

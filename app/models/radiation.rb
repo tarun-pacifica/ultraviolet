@@ -15,4 +15,11 @@
 
 class Radiation < ApplicationRecord
 	belongs_to :city
+	extend Scrapable
+
+	def self.uv_index(city)
+		@city = city
+		@city_index = fetch_radiation_levels.search "//location[@id='#{@city}']//index"
+		@uv_index = @city_index.text.to_f
+	end
 end

@@ -1,0 +1,7 @@
+en-au:
+  faker:
+    address:
+      city: [adelaide,alice springs,brisbane,canberra,darwin,kingston,melbourne,newcastle,perth,sydney,townsville]
+    location:
+      id: [adelaide,alice springs,brisbane,canberra,darwin,kingston,melbourne,newcastle,perth,sydney,townsville]
+      name: [adl,ali,bri,can,dar,kin,mel,new,per,syd,tow]

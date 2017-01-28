@@ -1,3 +1,9 @@
+# == Route Map
+#
+#    Prefix Verb URI Pattern          Controller#Action
+# radiation POST /radiation(.:format) radiations#create
+#
+
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+      resource :radiation, only: [:create]
 end

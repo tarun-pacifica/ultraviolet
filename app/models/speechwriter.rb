@@ -1,15 +1,14 @@
 # == Schema Information
 #
-# Table name: cities
+# Table name: speechwriters
 #
 #  id         :integer          not null, primary key
-#  name       :string
+#  message    :string
+#  warning    :string
+#  sunscreen  :boolean
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-FactoryGirl.define do
-	factory :city do
-		name	{Faker::Address.city}
-	end
+class Speechwriter < ApplicationRecord
 end
