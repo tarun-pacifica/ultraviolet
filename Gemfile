@@ -33,7 +33,6 @@ group :development, :test do
   gem 'annotate'
   gem 'simplecov'
   gem 'factory_girl_rails'
-  gem 'faker'
 end
 
 group :development do
@@ -52,4 +51,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'mechanize'
 gem 'rails_12factor', group: :production
+
+ruby '2.3.1'
+gem 'faker'
 
