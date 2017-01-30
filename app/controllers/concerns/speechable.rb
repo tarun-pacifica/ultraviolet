@@ -4,6 +4,7 @@ module Speechable
 	def prepare_content(city,index)
 		hash = {'message': status}
 		hash.merge ({'warning': warning}) if @index > 1
+		return hash
 	end
 
 	def warning
@@ -11,7 +12,7 @@ module Speechable
 	end
 
 	def status
-		"The current UV index for #{@city} is #{@index}"
+		"The current UV index for #{@city} is #{@index.to_s}"
 	end
 end
 

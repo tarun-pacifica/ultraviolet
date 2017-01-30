@@ -17,7 +17,7 @@ class RadiationsController < ApplicationController
 		      "response": {
 		        "outputSpeech": {
 		          "type": "PlainText",
-		          "text": @message+', '+@warning,
+		          "text": "#{@message}', #{@warning}"
 		        },
 		        "shouldEndSession": session_end
 		      },
